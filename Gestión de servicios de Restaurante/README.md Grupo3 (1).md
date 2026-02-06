@@ -1,0 +1,104 @@
+# Grupo-3-Gesti-n-de-servicios-de-Restaurante
+
+# Gestión de Servicios de Restaurante
+
+## Proyecto del Grupo 3
+
+### Integrantes:
+
+-   Alcivar Bazurto Ana Daniela\
+-   Anzules Aguilar Neicer Josue\
+-   León Segura Anthony David\
+-   Moreira Aguiño Jarib Jorge
+
+------------------------------------------------------------------------
+
+## Descripción del Proyecto
+
+Este proyecto consiste en el desarrollo de un sistema en Python que
+permite gestionar de manera integral los distintos servicios ofrecidos
+por un restaurante. El programa está construido utilizando los
+principios de Programación Orientada a Objetos (POO), lo que garantiza
+un diseño modular, escalable y fácil de mantener a largo plazo.
+
+El sistema incluye funcionalidades para el registro y administración de
+empleados, así como la creación y control de los servicios de atención,
+ya sea servicio en mesa o servicio a domicilio. Cada tipo de servicio
+cuenta con sus propias características y reglas, permitiendo calcular
+automáticamente los costos asociados según las opciones seleccionadas
+por el cliente.
+
+Además, el sistema incorpora un módulo de generación de facturas, donde
+se detallan los pedidos, precios, subtotales, impuestos y total a pagar.
+También se incluye un sistema de validaciones que previene el ingreso de
+datos erróneos o incompletos, garantizando la integridad y confiabilidad
+de la información procesada.
+
+El objetivo principal de este proyecto es ofrecer una herramienta
+práctica que simule la operación real de un restaurante, permitiendo
+gestionar recursos humanos, servicios y facturación de manera eficiente.
+Gracias a su arquitectura orientada a objetos, el sistema puede
+ampliarse fácilmente para incorporar nuevos tipos de servicios, métodos
+de pago, reportes u otros módulos requeridos en futuras versiones.
+
+------------------------------------------------------------------------
+
+## Diagrama / Explicación de Clases
+
+### Diagrama de Clases
+
+![image alt](https://github.com/jaribjorgemoreiraaguino-dot/Grupo-3-Gesti-n-de-servicios-de-Restaurante-/blob/81b1fb7efd3a60b04adc8bee7665d0f0f514a4e6/diagrama%20de%20empleado.png)
+
+------------------------------------------------------------------------
+
+### Empleado
+
+-   Representa a un empleado del restaurante.\
+-   Atributos: **nombre**, **cargo**, ambos con validaciones.\
+-   Uso de `@property` para manejo seguro de datos.
+
+### ServicioRestaurante (Superclase)
+
+Atributos: - **id_servicio** - **cliente** - **costo_base**
+
+Métodos: - **calcular()** (polimórfico)\
+- **mostrar_info()**
+
+### ServicioMesa (Subclase)
+
+Atributos adicionales: - **numero_mesa** - **propina**
+
+El total = costo base + propina.
+
+### ServicioDelivery (Subclase)
+
+Atributos adicionales: - **direccion** - **tarifa_envio**
+
+El total = costo base + tarifa de envío.
+
+### Factura
+
+Incluye: - **fecha** - **servicio asociado** - **monto total**
+
+------------------------------------------------------------------------
+
+## Ejecutar cada archivo de prueba
+
+    python empleado.py
+    python servicio_restaurante.py
+    python servicio_mesa.py
+    python servicio_delivery.py
+    python factura.py
+
+------------------------------------------------------------------------
+
+## Evidencias
+
+![image alt](https://github.com/jaribjorgemoreiraaguino-dot/Grupo-3-Gesti-n-de-servicios-de-Restaurante-/blob/2fae3185cdb6672173584d7cfdd2a005cd682265/Captura%20de%20pantalla%202025-12-09%20162302.png)
+
+------------------------------------------------------------------------
+
+## Proyecto Finalizado
+
+Sistema funcional demostrando uso de POO aplicada a un contexto real de
+restaurante.
