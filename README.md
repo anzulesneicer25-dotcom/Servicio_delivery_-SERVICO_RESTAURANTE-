@@ -1,5 +1,7 @@
 # Servicio_delivery_-SERVICO_RESTAURANTE-
-2 PARCIAL 
+2 PARCIAL.
+
+
 Nuestro proyecto se llama “Gestión de servicios de restaurante” y tiene como objetivo organizar y controlar los distintos tipos de servicios que ofrece un restaurante, como atención en mesa y entregas a domicilio. Para lograrlo, diseñamos una aplicación que sigue una estructura clara:
 - La interfaz gráfica (VentanaDelivery) permite al usuario ingresar datos, validarlos uno por uno y recibir retroalimentación mediante cuadros de diálogo (QMessageBox).
 - La capa de dominio (ServicioDelivery) define las reglas de negocio, asegurando que los datos sean correctos y calculando totales como costo base más tarifa o propina.
